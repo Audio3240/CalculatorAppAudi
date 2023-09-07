@@ -14,7 +14,6 @@
         android:layout_height="wrap_content"
         android:width="393dp"
         android:height="@dimen/buttonHeight"
-        android:background="@color/md_theme_dark_inversePrimary"
         android:backgroundTint="@color/md_theme_dark_onBackground"
         android:text="All Clear"
         android:textAlignment="center"
@@ -28,7 +27,7 @@
         android:layout_height="wrap_content"
         android:width="@dimen/buttonWidth"
         android:height="@dimen/smallButtonHeight"
-        android:background="@color/md_theme_dark_inversePrimary"
+
         android:backgroundTint="@color/md_theme_dark_onPrimaryContainer"
         android:text="X"
         android:textAlignment="center"
