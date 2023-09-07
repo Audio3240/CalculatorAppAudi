@@ -160,6 +160,7 @@
         android:text="7"
         android:textAlignment="center"
         android:textSize="48sp"
+        app:strokeColor="@color/md_theme_dark_inverseSurface"
         tools:layout_editor_absoluteX="10dp"
         tools:layout_editor_absoluteY="282dp" />
 
