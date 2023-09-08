@@ -4,247 +4,292 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/md_theme_dark_background"
-    android:backgroundTint="@color/md_theme_dark_inversePrimary"
+    android:background="@color/md_theme_dark_onPrimary"
     tools:context=".MainActivity">
 
     <Button
         android:id="@+id/bClear"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:width="393dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="18dp"
+        android:width="373dp"
         android:height="@dimen/buttonHeight"
-        android:backgroundTint="@color/md_theme_dark_onBackground"
+        android:backgroundTint="@color/md_theme_dark_error"
         android:text="All Clear"
         android:textAlignment="center"
         android:textSize="48sp"
-        tools:layout_editor_absoluteX="10dp"
-        tools:layout_editor_absoluteY="187dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/bX"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:width="@dimen/buttonWidth"
-        android:height="@dimen/smallButtonHeight"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
 
+        android:layout_marginEnd="17dp"
+        android:width="84dp"
+        android:height="@dimen/smallButtonHeight"
         android:backgroundTint="@color/md_theme_dark_onPrimaryContainer"
         android:text="X"
         android:textAlignment="center"
-        android:textSize="48sp"
-        tools:layout_editor_absoluteX="292dp"
-        tools:layout_editor_absoluteY="353dp" />
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/b6"
+        app:layout_constraintTop_toBottomOf="@+id/bDiv" />
 
     <Button
         android:id="@+id/bSub"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:width="@dimen/buttonWidth"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="17dp"
+        android:width="84dp"
         android:height="@dimen/smallButtonHeight"
-        android:background="@color/md_theme_dark_inversePrimary"
         android:backgroundTint="@color/md_theme_dark_onPrimaryContainer"
         android:text="-"
         android:textAlignment="center"
-        android:textSize="48sp"
-        tools:layout_editor_absoluteX="292dp"
-        tools:layout_editor_absoluteY="423dp" />
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/b6"
+        app:layout_constraintTop_toBottomOf="@+id/bX" />
 
     <Button
         android:id="@+id/bAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:width="@dimen/buttonWidth"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="17dp"
+        android:width="84dp"
         android:height="@dimen/smallButtonHeight"
-        android:background="@color/md_theme_dark_inversePrimary"
         android:backgroundTint="@color/md_theme_dark_onPrimaryContainer"
         android:text="+"
         android:textAlignment="center"
-        android:textSize="48sp"
-        tools:layout_editor_absoluteX="292dp"
-        tools:layout_editor_absoluteY="496dp" />
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/b3"
+        app:layout_constraintTop_toBottomOf="@+id/bSub" />
 
     <Button
         android:id="@+id/bDiv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="10dp"
-        android:width="@dimen/buttonWidth"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="17dp"
+        android:width="84dp"
         android:height="@dimen/smallButtonHeight"
-        android:background="@color/md_theme_dark_inversePrimary"
-        android:backgroundTint="@color/md_theme_dark_inverseOnSurface"
+        android:backgroundTint="@color/md_theme_dark_onPrimaryContainer"
         android:text="÷"
         android:textAlignment="center"
-        android:textSize="48sp"
+        android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="282dp" />
+        app:layout_constraintStart_toEndOf="@+id/b9"
+        app:layout_constraintTop_toBottomOf="@+id/bClear" />
 
     <Button
         android:id="@+id/bDot"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="6dp"
         android:width="@dimen/buttonWidth"
         android:height="@dimen/buttonHeight"
-        android:background="@color/md_theme_dark_inversePrimary"
-        android:backgroundTint="@color/md_theme_dark_onPrimaryContainer"
+        android:backgroundTint="@color/md_theme_dark_primary"
         android:text="."
         android:textAlignment="center"
         android:textSize="48sp"
-        tools:layout_editor_absoluteX="104dp"
-        tools:layout_editor_absoluteY="566dp" />
+        app:layout_constraintEnd_toStartOf="@+id/b3"
+        app:layout_constraintStart_toEndOf="@+id/b0"
+        app:layout_constraintTop_toBottomOf="@+id/b2" />
 
     <Button
         android:id="@+id/bEqual"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="17dp"
         android:width="180dp"
         android:height="@dimen/buttonHeight"
-        android:background="@color/md_theme_dark_inversePrimary"
         android:backgroundTint="@color/md_theme_dark_onPrimaryContainer"
         android:text="="
         android:textAlignment="center"
         android:textSize="48sp"
-        tools:layout_editor_absoluteX="198dp"
-        tools:layout_editor_absoluteY="566dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bDot"
+        app:layout_constraintTop_toBottomOf="@+id/bAdd" />
 
     <Button
         android:id="@+id/b0"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:width="@dimen/buttonWidth"
-        android:height="@dimen/buttonHeight"
-        android:background="@color/md_theme_dark_inversePrimary"
-        android:backgroundTint="@color/md_theme_dark_onPrimaryContainer"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="7dp"
+        style="@style/numberStyle"
         android:text="0"
         android:textAlignment="center"
         android:textSize="48sp"
-        tools:layout_editor_absoluteX="10dp"
-        tools:layout_editor_absoluteY="566dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b1" />
 
     <Button
         android:id="@+id/b5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="8dp"
         android:width="@dimen/buttonWidth"
         android:height="@dimen/buttonHeight"
-        android:background="@color/md_theme_dark_inversePrimary"
-        android:backgroundTint="@color/md_theme_dark_onPrimaryContainer"
+        android:backgroundTint="@color/md_theme_dark_primary"
         android:text="5"
         android:textAlignment="center"
         android:textSize="48sp"
-        tools:layout_editor_absoluteX="104dp"
-        tools:layout_editor_absoluteY="377dp" />
+        app:layout_constraintStart_toEndOf="@+id/b4"
+        app:layout_constraintTop_toBottomOf="@+id/b8" />
 
     <Button
         android:id="@+id/b6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="8dp"
         android:width="@dimen/buttonWidth"
         android:height="@dimen/buttonHeight"
-        android:background="@color/md_theme_dark_inversePrimary"
-        android:backgroundTint="@color/md_theme_dark_onPrimaryContainer"
+        android:backgroundTint="@color/md_theme_dark_primary"
         android:text="6"
         android:textAlignment="center"
         android:textSize="48sp"
-        tools:layout_editor_absoluteX="198dp"
-        tools:layout_editor_absoluteY="377dp" />
+        app:layout_constraintStart_toEndOf="@+id/b5"
+        app:layout_constraintTop_toBottomOf="@+id/b9" />
 
     <Button
         android:id="@+id/b7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="7dp"
         android:width="@dimen/buttonWidth"
         android:height="@dimen/buttonHeight"
-        android:background="@color/md_theme_dark_inversePrimary"
-        android:backgroundTint="@color/md_theme_dark_onPrimaryContainer"
+        android:backgroundTint="@color/md_theme_dark_primary"
         android:text="7"
         android:textAlignment="center"
+        android:textColor="@color/md_theme_light_onTertiaryContainer"
         android:textSize="48sp"
-        app:strokeColor="@color/md_theme_dark_inverseSurface"
-        tools:layout_editor_absoluteX="10dp"
-        tools:layout_editor_absoluteY="282dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bClear" />
 
     <Button
         android:id="@+id/b1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
         android:width="@dimen/buttonWidth"
         android:height="@dimen/buttonHeight"
-        android:background="@color/md_theme_dark_inversePrimary"
-        android:backgroundTint="@color/md_theme_dark_onPrimaryContainer"
+        android:backgroundTint="@color/md_theme_dark_primary"
         android:text="1"
         android:textAlignment="center"
         android:textSize="48sp"
-        tools:layout_editor_absoluteX="10dp"
-        tools:layout_editor_absoluteY="472dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b4" />
 
     <Button
         android:id="@+id/b3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="8dp"
         android:width="@dimen/buttonWidth"
         android:height="@dimen/buttonHeight"
-        android:background="@color/md_theme_dark_inversePrimary"
-        android:backgroundTint="@color/md_theme_dark_onPrimaryContainer"
+        android:backgroundTint="@color/md_theme_dark_primary"
         android:text="3"
         android:textAlignment="center"
         android:textSize="48sp"
-        tools:layout_editor_absoluteX="198dp"
-        tools:layout_editor_absoluteY="472dp" />
+        app:layout_constraintStart_toEndOf="@+id/b2"
+        app:layout_constraintTop_toBottomOf="@+id/b6" />
 
     <Button
         android:id="@+id/b8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="7dp"
         android:width="@dimen/buttonWidth"
         android:height="@dimen/buttonHeight"
-        android:background="@color/md_theme_dark_inversePrimary"
-        android:backgroundTint="@color/md_theme_dark_onPrimaryContainer"
+        android:backgroundTint="@color/md_theme_dark_primary"
         android:text="8"
         android:textAlignment="center"
         android:textSize="48sp"
-        tools:layout_editor_absoluteX="104dp"
-        tools:layout_editor_absoluteY="282dp" />
+        app:layout_constraintStart_toEndOf="@+id/b7"
+        app:layout_constraintTop_toBottomOf="@+id/bClear" />
 
     <Button
         android:id="@+id/b2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="8dp"
         android:width="@dimen/buttonWidth"
         android:height="@dimen/buttonHeight"
-        android:background="@color/md_theme_dark_inversePrimary"
-        android:backgroundTint="@color/md_theme_dark_onPrimaryContainer"
+        android:backgroundTint="@color/md_theme_dark_primary"
         android:text="2"
         android:textAlignment="center"
         android:textSize="48sp"
-        tools:layout_editor_absoluteX="104dp"
-        tools:layout_editor_absoluteY="472dp" />
+        app:layout_constraintStart_toEndOf="@+id/b1"
+        app:layout_constraintTop_toBottomOf="@+id/b5" />
 
     <Button
         android:id="@+id/b9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="7dp"
         android:width="@dimen/buttonWidth"
         android:height="@dimen/buttonHeight"
-        android:background="@color/md_theme_dark_inversePrimary"
-        android:backgroundTint="@color/md_theme_dark_onPrimaryContainer"
+        android:backgroundTint="@color/md_theme_dark_primary"
         android:text="9"
         android:textAlignment="center"
         android:textSize="48sp"
-        tools:layout_editor_absoluteX="198dp"
-        tools:layout_editor_absoluteY="282dp" />
+        app:layout_constraintStart_toEndOf="@+id/b8"
+        app:layout_constraintTop_toBottomOf="@+id/bClear" />
 
     <Button
         android:id="@+id/b4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
         android:width="@dimen/buttonWidth"
         android:height="@dimen/buttonHeight"
-        android:background="@color/md_theme_dark_onBackground"
-        android:backgroundTint="@color/md_theme_dark_onPrimaryContainer"
+        android:backgroundTint="@color/md_theme_dark_primary"
         android:text="4"
         android:textAlignment="center"
         android:textSize="48sp"
-        tools:layout_editor_absoluteX="10dp"
-        tools:layout_editor_absoluteY="377dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b7" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="373dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="33dp"
+
+        android:layout_marginEnd="18dp"
+        android:background="@color/md_theme_dark_onPrimaryContainer"
+        android:text="math"
+        android:textAlignment="textEnd"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

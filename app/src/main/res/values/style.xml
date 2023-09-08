@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="numberStyle">
+        <item name="android:width">@dimen/buttonWidth</item>
+        <item name="android:height">@dimen/buttonHeight</item>
+        <item name="android:onClick">numSelected</item>
+        <item name="android:backgroundTint">@color/md_theme_dark_primary</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">48sp</item>
+    </style>
+</resources>
