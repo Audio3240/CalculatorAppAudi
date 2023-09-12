@@ -175,7 +175,7 @@
         android:width="180dp"
         android:height="@dimen/buttonHeight"
         android:backgroundTint="@color/md_theme_dark_onPrimaryContainer"
-        android:onClick="numSelected"
+        android:onClick="opSelected"
         android:text="="
         android:textAlignment="center"
         android:textSize="48sp"
