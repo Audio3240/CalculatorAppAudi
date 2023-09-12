@@ -1,5 +1,7 @@
 package com.example.calculatorapp;
 
+import static java.lang.Integer.parseInt;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -14,34 +16,52 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-    private String numInput = "";
+    private String numInput;
+    private boolean nextNum = false;
+    private int numOne;
+    private int numTwo;
 
-    public void operatorSelected(View v){
+    public double calculate(int numOne, int numTwo, String op){
+
+
+
+        return
+    }
+    public void opSelected(View v){
+        TextView input = findViewById(R.id.textView);
+        String op = "";
         if(v.getId()==R.id.bX){
-            numInput +="*";
+            op ="*";
+            nextNum = true;
+            numOne = parseInt(input.toString());
             Log.i("Trairat", "* Clicked");
         }
         if(v.getId()==R.id.bAdd){
-            numInput +="+";
+            op ="+";
+            nextNum = true;
             Log.i("Trairat", "+ Clicked");
         }
         if(v.getId()==R.id.bSub){
-            numInput +="-";
+            op ="-";
+            nextNum = true;
             Log.i("Trairat", "- Clicked");
         }
         if(v.getId()==R.id.bDiv){
-            numInput +="/";
+            op ="/";
+            nextNum = true;
             Log.i("Trairat", "/ Clicked");
         }
         if(v.getId()==R.id.bEqual){
-            numInput="=";
+
             Log.i("Trairat", "= Clicked");
         }
     }
     public void numSelected(View v){
-
         TextView input = findViewById(R.id.textView);
-
+        if(nextNum){
+            numInput="";
+            input.setText(numInput);
+        }
         if(v.getId()==R.id.b0){
             numInput += "0";
             Log.i("Trairat", "0 Clicked");
