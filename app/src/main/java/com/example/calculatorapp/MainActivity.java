@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     }
     private String numInput = "";
     private double lastNum;
+    private int op = 1;
     public String calculate(double numOne, double numTwo, int op){
         String ans = "";
         if(op==0){
@@ -25,50 +26,63 @@ public class MainActivity extends AppCompatActivity {
         } else if(op==1){
              ans += Double.toString(numOne+numTwo);
         } else if(op==2){
-            ans += Double.toString(numOne);
+            ans += Double.toString(numOne-numTwo);
         } else if(op==3){
-            ans += Double.toString(numOne);
+            ans += Double.toString(numOne*numTwo);
         } else if(op==4){
-            ans += Double.toString(numOne);
+            ans += Double.toString(numOne/numTwo);
         }
         return ans;
     }
     public void opSelected(View v){
         TextView input = findViewById(R.id.textView);
-        int op=0;
+
+        if(v.getId()==R.id.bChange){
+            input.setText(calculate(toDouble(input), -1, 3));
+        }
 
         if(v.getId()==R.id.bAdd){
-            op = 1;
+            op=1;
             Log.i("Trairat", "+ Clicked");
-            lastNum = Double.parseDouble(numInput);
+            lastNum = toDouble(input);
             numInput = "";
             input.setText(numInput);
         }
         if(v.getId()==R.id.bSub){
-            op =2;
+            op=2;
             Log.i("Trairat", "- Clicked");
-            lastNum = Double.parseDouble(numInput);
+            lastNum = toDouble(input);
             numInput = "";
             input.setText(numInput);
         }
         if(v.getId()==R.id.bX){
-            op = 3;
+            op=3;
             Log.i("Trairat", "* Clicked");
-            lastNum = Double.parseDouble(numInput);
+            lastNum = toDouble(input);
             numInput = "";
             input.setText(numInput);
         }
         if(v.getId()==R.id.bDiv){
-            op =4;
+            op=4;
             Log.i("Trairat", "/ Clicked");
-            lastNum = Double.parseDouble(numInput);
+            lastNum = toDouble(input);
             numInput = "";
             input.setText(numInput);
         }
         if(v.getId()==R.id.bEqual){
-            String num = calculate(lastNum,Double.parseDouble(numInput),op);
-            input.setText(num);
+            String out = calculate(lastNum,Double.parseDouble(numInput),op);
+            input.setText(out);
+            lastNum = toDouble(input);
             Log.i("Trairat", "= Clicked");
+        }
+
+    }
+
+    public static double toDouble(TextView tv) {
+        try {//from  www  .ja  v  a 2s.c om
+            return Double.valueOf(tv.getText().toString());
+        } catch (NumberFormatException e) {
+            return 0.0;
         }
     }
     public void numSelected(View v){
