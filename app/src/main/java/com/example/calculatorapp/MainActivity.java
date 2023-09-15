@@ -78,8 +78,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //from  www.java2s.com
     public static double toDouble(TextView tv) {
-        try {//from  www  .ja  v  a 2s.c om
+        try {
             return Double.valueOf(tv.getText().toString());
         } catch (NumberFormatException e) {
             return 0.0;
